@@ -20,7 +20,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="navbar">
+    <nav class="navbar navbar-expand-md fixed-top navbar-light navbar-dark" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -28,18 +28,30 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto text-decoration-none">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              <a class="nav-link" href="#">
+                <span class="nav-text d-none d-sm-block">Beranda</span>
+                <span class="nav-text-mobile d-block d-sm-none" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  type="button">Beranda</span>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#pulau">Pulau</a>
+              <a class="nav-link" href="#pulau">
+                <span class="nav-text d-none d-sm-block">Pulau</span>
+                <span class="nav-text-mobile d-block d-sm-none" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  type="button">Pulau</span>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#budaya">Budaya</a>
+              <a class="nav-link" href="#budaya"><span class="nav-text d-none d-sm-block">Budaya</span>
+                <span class="nav-text-mobile d-block d-sm-none" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  type="button">Budaya</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#kuliner">Kuliner</a>
+              <a class="nav-link" href="#kuliner"><span class="nav-text d-none d-sm-block">Kuliner</span>
+                <span class="nav-text-mobile d-block d-sm-none" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  type="button">Kuliner</span></a>
             </li>
           </ul>
         </div>
@@ -49,14 +61,15 @@
 
   <main>
     <article>
-      
+
       <section class="hero">
         <div class="container">
           <div class="hero-text">
-            <h1 id="welcome-text">Selamat Datang</h1>
-            <h2>Mari Cintai Indonesia</h2>
-            <p>
-              Mari mengenal Indonesia dengan berbagai keragaman, dari warisan budaya hingga destinasi kelas dunia yang menyenangkan.
+            <h1 id="welcome-text" class="text-white">Selamat Datang</h1>
+            <h2 class="text-white">Mari Cintai Indonesia</h2>
+            <p class="text-white">
+              Mari mengenal Indonesia dengan berbagai keragaman, dari warisan budaya hingga destinasi kelas dunia yang
+              menyenangkan.
             </p>
           </div>
           <img src="assets/img/circle.jpeg" alt="">
@@ -72,28 +85,32 @@
             <div class="card active">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
                 </p>
               </div>
             </div>
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
                 </p>
               </div>
             </div>
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
                 </p>
               </div>
             </div>
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
                 </p>
               </div>
             </div>
@@ -106,7 +123,8 @@
           <div class="budaya-title">
             <h1 class="title">Budaya</h1>
             <p>
-              Indonesia memiliki beraneka ragam Rumah Adat, Pakaian Tradisional, Tarian Adat, Bahasa Daerah, Upacara Adat, Makanan Khas Daerah, Alat musik serta lagu disetiap daerahnya masing masing
+              Indonesia memiliki beraneka ragam Rumah Adat, Pakaian Tradisional, Tarian Adat, Bahasa Daerah, Upacara
+              Adat, Makanan Khas Daerah, Alat musik serta lagu disetiap daerahnya masing masing
             </p>
             <a class="btn btn-primary" href="#">Pelajari Lebih Lanjut</a>
           </div>
@@ -124,34 +142,40 @@
           <div class="kuliner-title">
             <h1 class="title">Kuliner</h1>
             <img src="assets/img/line.png" alt="line">
-            <p>Indonesia memiliki beragam kuliner terenak  yang sudah diakui  oleh dunia</p>
+            <p>Indonesia memiliki beragam kuliner terenak yang sudah diakui oleh dunia</p>
           </div>
           <div class="card-area">
-            <div class="card">
+            <div class="card border-0">
+              <img src="assets/img/food/fried-rice-in-a-plate-on-a-white-wooden-floor-2021-08-31-12-48-15-utc.jpg">
               <div class="card-body text-center">
                 <h5 class="card-title">Nasi Goreng</h5>
-                <p class="card-text">Nasi goreng merupakan sebuah makanan berupa nasi yang digoreng yang dicampur rempah, ayam, telur dan bumbu lain.
+                <p class="card-text">Nasi goreng merupakan sebuah makanan berupa nasi yang digoreng yang dicampur
+                  rempah, ayam, telur dan bumbu lain.
                 </p>
               </div>
             </div>
-            <div class="card">
+            <div class="card border-0">
+              <img src="assets/img/food/rendang-daging-or-beef-rendang-a-traditional-dish-2022-08-01-04-34-26-utc.jpg">
               <div class="card-body text-center">
                 <h5 class="card-title">Rendang</h5>
-                <p class="card-text">Rendang merupakan makanan khas Sumatera Barat yang  berbahan dasar daging, aneka rempah dan santan.
+                <p class="card-text">Rendang merupakan makanan khas Sumatera Barat yang berbahan dasar daging, aneka
+                  rempah dan santan.
                 </p>
               </div>
             </div>
-            <div class="card">
-              <div class="card-body text-center">
+            <div class="card border-0">
+              <img src="assets/img/food/malaysian-beef-satay-with-delicious-peanut-sauce-2022-08-01-01-19-10-utc.jpg">
+
+              <div class="card-body text-center ">
                 <h5 class="card-title">Sate</h5>
-                <p class="card-text">Sate adalah makanan yang terbuat dari potongan kecil daging yang dipanggang dan ditusuk menggunakan lidi.
+                <p class="card-text">Sate adalah makanan yang terbuat dari potongan kecil daging yang dipanggang dan
+                  ditusuk menggunakan lidi.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
     </article>
   </main>
 

@@ -3,94 +3,157 @@
 * {
   font-size: 16px;
   box-sizing: border-box;
-  font-family: "Plus Jakarta Sans", sans-serif; }
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
 
 p {
-  margin: 0; }
+  margin: 0;
+}
+
+.card img {
+  border-radius: 20px;
+}
 
 .title {
   font-size: 36px;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .btn {
   padding: 8px 16px;
   border-radius: 10px;
-  background-color: #4876E8; }
+  background-color: #4876e8;
+}
 
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../img/bali.jpg") }
+  background-image: url("../img/bali.jpg");
+}
 .hero .container {
-  padding: 107px 48px 48px 32px; }
+  padding: 107px 48px 48px 32px;
+}
 .hero .container h1 {
   font-size: 55px;
-  font-weight: 700; }
+  font-weight: 700;
+}
 .hero .container h2 {
-  font-size: 30px; }
+  font-size: 30px;
+}
 .hero .container p {
-  font-size: 20px; }
+  font-size: 20px;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(1, 0, 1, 0.616),
+    rgba(0, 0, 0, 0)
+  );
+  position: absolute;
+  bottom: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+#navbar {
+  z-index: 2;
+}
 
 .pulau,
 .kuliner {
-  margin: 95px 0; }
+  margin: 95px 0;
+}
 
 .card-title {
   font-size: 18px;
-  font-weight: 700; }
+  font-weight: 700;
+}
+
+section {
+  padding-top: 80px;
+  margin-top: -60px;
+}
 
 #welcome-text {
   width: 100%;
   font-weight: bold;
+  animation: move 4s infinite;
   animation-delay: 3s;
-  animation: move 4s infinite; }
+}
 
 @keyframes move {
   0% {
-    opacity: 100%; }
+    opacity: 100%;
+  }
   25% {
-    opacity: 0%; }
+    opacity: 0%;
+  }
   100% {
-    opacity: 100%; } }
+    opacity: 100%;
+  }
+}
 
 #navbar {
-  transition: 0.4s; }
+  transition: 0.4s;
+}
 
 .pulau .container .card-area {
-  gap: 16px; }
+  gap: 16px;
+}
 .pulau .container .card-area .card {
   width: 211px;
   transition: 0.5s;
-  min-height: 300px; }
+  min-height: 300px;
+}
 
 .kuliner .container .kuliner-title {
   gap: 32px;
   display: flex;
   margin: 0 auto;
-  align-items: center; }
+  align-items: center;
+}
 
 .budaya .container .budaya-title p {
-  margin: 16px 0 32px 0; }
+  margin: 16px 0 32px 0;
+}
 
+.img-card img {
+  border: 0px 0px 1px 2px solid;
+  padding: 3px;
+  box-shadow: 5px 10px 20px red;
+}
 
 /* Mobile */
 @media (max-width: 992px) {
   .hero .container {
-    text-align: center; }
+    text-align: center;
+  }
   .hero .container img {
     width: 100%;
-    margin-top: 20px; }
+    margin-top: 20px;
+  }
   .hero .container h1 {
-    font-size: 35px; }
+    font-size: 35px;
+  }
   .pulau .container .card-area .card,
   .kuliner .container .card-area .card {
     width: 100%;
-    margin-top: 20px; }
+    margin-top: 20px;
+  }
   .budaya .container .budaya-img img {
-    width: 100%; 
-    margin-top: 20px ; } 
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* Dekstop */
@@ -99,11 +162,14 @@ p {
     gap: 17px;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+  }
   .hero .container .hero-text {
-    width: 890px; }
+    width: 890px;
+  }
   .hero .container img {
-    width: 437px; }
+    width: 437px;
+  }
 
   .pulau .container .card-area,
   .kuliner .container .card-area {
@@ -111,24 +177,29 @@ p {
     display: flex;
     margin-top: 20px;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+  }
   .pulau .container .card-area .card:hover,
   .pulau .container .card-area .card.active {
-    width: 324px; }
+    width: 324px;
+  }
 
   .budaya .container {
     gap: 128px;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+  }
   .budaya .container .budaya-title {
-    width: 324px; }
+    width: 324px;
+  }
   .budaya .container .budaya-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px; } 
-  
-  .kuliner .container .kuliner-title {
-    width: 499px; }
+    grid-gap: 15px;
+  }
 
+  .kuliner .container .kuliner-title {
+    width: 499px;
+  }
 }
