@@ -70,8 +70,9 @@ p {
 }
 
 .pulau,
+.kontak,
 .kuliner {
-  margin: 95px 0;
+  margin: 50px 0;
 }
 
 .card-title {
@@ -108,52 +109,58 @@ section {
 }
 
 .pulau .container .card-area {
-  gap: 16px;
-}
+  gap: 16px; }
 .pulau .container .card-area .card {
   width: 211px;
   transition: 0.5s;
-  min-height: 300px;
-}
+  min-height: 300px; }
 
 .kuliner .container .kuliner-title {
   gap: 32px;
   display: flex;
   margin: 0 auto;
-  align-items: center;
-}
+  align-items: center; }
 
 .budaya .container .budaya-title p {
-  margin: 16px 0 32px 0;
-}
+  margin: 16px 0 32px 0; }
 
-.img-card img {
-  border: 0px 0px 1px 2px solid;
-  padding: 3px;
-  box-shadow: 5px 10px 20px red;
-}
+.kontak .container .kontak-icon {
+  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center; }
+.kontak .container .kontak-icon img {
+  width: 50px; }
+
+.destinasi .container .card-body {
+  bottom: 0;
+  border-start-end-radius: 20px;
+  background-color: #FFFFFF; }
 
 /* Mobile */
 @media (max-width: 992px) {
   .hero .container {
-    text-align: center;
-  }
-  .hero .container img {
+    text-align: center; }
+  
+  .hero .container img,
+  .pulau .container .card-area .card,
+  .budaya .container .budaya-img img, 
+  .kuliner .container .card-area .card,
+  .destinasi .container .card-area .card {
     width: 100%;
-    margin-top: 20px;
-  }
+    margin-top: 20px; }
   .hero .container h1 {
-    font-size: 35px;
-  }
+    font-size: 35px; }
   .pulau .container .card-area .card,
   .kuliner .container .card-area .card {
     width: 100%;
-    margin-top: 20px;
-  }
+    margin-top: 20px; }
   .budaya .container .budaya-img img {
     width: 100%;
-    margin-top: 20px;
-  }
+    margin-top: 20px; }
+
 }
 
 /* Dekstop */
@@ -162,44 +169,55 @@ section {
     gap: 17px;
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
+    justify-content: center; }
   .hero .container .hero-text {
-    width: 890px;
-  }
+    width: 890px; }
   .hero .container img {
-    width: 437px;
-  }
+    width: 437px; }
+
+  .hero .container img,
+  .kuliner .container .kuliner-title {
+    width: 437px; }
 
   .pulau .container .card-area,
-  .kuliner .container .card-area {
+  .kuliner .container .card-area,
+  .destinasi .container .card-area {
     gap: 16px;
     display: flex;
     margin-top: 20px;
     align-items: center;
-    justify-content: center;
-  }
+    justify-content: center; }
+
+  .destinasi .container .card-area {
+  flex-wrap: wrap; }
+
+  .destinasi .container .card-area .img-card {
+    width: 324px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;  }
+
   .pulau .container .card-area .card:hover,
   .pulau .container .card-area .card.active {
-    width: 324px;
-  }
+    width: 324px; }
+
+  .pulau .container .card-area .card.active,
+  .budaya .container .budaya-title {
+    width: 324px; }
 
   .budaya .container {
     gap: 128px;
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
+    justify-content: center; }
   .budaya .container .budaya-title {
-    width: 324px;
-  }
+    width: 324px; }
   .budaya .container .budaya-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
-  }
+    justify-content: center; }
 
   .kuliner .container .kuliner-title {
-    width: 499px;
-  }
+    width: 499px; }
 }
