@@ -24,6 +24,23 @@
   gap: 16px;
 }
 
+#welcome-text {
+  animation: move 4s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes move {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 .card {
   width: 211px;
   transition: 0.5s;
