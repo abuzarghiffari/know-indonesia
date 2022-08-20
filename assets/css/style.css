@@ -3,16 +3,13 @@
 * {
   font-size: 16px;
   box-sizing: border-box;
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
+  font-family: "Plus Jakarta Sans", sans-serif; }
 
 p {
-  margin: 0;
-}
+  margin: 0; }
 
 .card img {
-  border-radius: 20px;
-}
+  border-radius: 20px; }
 
 .title {
   font-size: 36px;
@@ -38,7 +35,6 @@ p {
   font-size: 30px; }
 .hero .container p {
   font-size: 20px; }
-
 .hero::after {
   content: "";
   display: block;
@@ -50,40 +46,31 @@ p {
     rgba(0, 0, 0, 0)
   );
   position: absolute;
-  bottom: 0;
-}
-
+  bottom: 0; }
 .hero .container {
   position: relative;
-  z-index: 1;
-}
-
+  z-index: 1; }
 #navbar {
-  z-index: 2;
-}
+  z-index: 2; }
 
 .pulau,
 .kontak,
 .kuliner {
-  margin: 50px 0;
-}
+  margin: 50px 0; }
 
 .card-title {
   font-size: 18px;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 section {
   padding-top: 80px;
-  margin-top: -60px;
-}
+  margin-top: -60px; }
 
 #welcome-text {
   width: 100%;
   font-weight: bold;
   animation: move 4s infinite;
-  animation-delay: 3s;
-}
+  animation-delay: 3s; }
 
 @keyframes move {
   0% {
@@ -94,12 +81,10 @@ section {
   }
   100% {
     opacity: 100%;
-  }
-}
+  } }
 
 #navbar {
-  transition: 0.4s;
-}
+  transition: 0.4s; }
 
 .pulau .container .card-area {
   gap: 16px; }
@@ -107,34 +92,26 @@ section {
   width: 211px;
   transition: 0.5s;
   min-height: 300px; }
-
 .pulau .container .card-area .card .card-body {
   bottom: 0;
   margin: 20px;
   border-radius: 20px;
   background-color: #FFFFFF; }
 
-.text-header {
-  font-size: 36px;
-}
-
-.text-body {
-  font-size: 16px;
-}
-
-
-.pulau .container .card-area .card img {
+.pulau .container .card-area .card img,
+.kuliner .container .card-area .card img,
+.destinasi .container .card-area .img-card {
   height: 300px;
   object-fit: cover;
   object-position: center; }
 
-.kuliner .container .kuliner-title {
-  gap: 32px;
+.kuliner .container .kuliner-text {
+  gap: 30px;
   display: flex;
   margin: 0 auto;
   align-items: center; }
 
-.budaya .container .budaya-title p {
+.budaya .container .budaya-text p {
   margin: 16px 0 32px 0; }
 
 .kontak .container .kontak-icon {
@@ -149,78 +126,73 @@ section {
 
 .destinasi .container .card-body {
   bottom: 0;
-  border-start-end-radius: 20px;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF; 
+  border-start-end-radius: 20px; }
+  
+.kuliner .container .card-area .card,
+.destinasi .container .card-area .img-card {
+  width: 324px; }
 
 /* Mobile */
 @media (max-width: 992px) {
   .hero .container {
-    text-align: center; }
-  
-  .hero .container img,
-  .pulau .container .card-area .card,
-  .budaya .container .budaya-img img, 
-  .kuliner .container .card-area .card,
-  .destinasi .container .card-area .card {
-    width: 100%;
-    margin-top: 20px; }
+    text-align: center; } 
+
   .hero .container h1 {
     font-size: 35px; }
-  .pulau .container .card-area .card,
-  .kuliner .container .card-area .card {
-    width: 100%;
-    margin-top: 20px; }
-  .budaya .container .budaya-img img {
-    width: 100%;
-    margin-top: 20px; }
 
+  .map .container img {
+    width: 100%;
+    margin-bottom: 20px; }
+
+  .hero .container img,
+  .pulau .container .card-area .card,
+  .budaya .container .budaya-img img,
+  .kuliner .container .card-area .card,
+  .destinasi .container .card-area .img-card {
+    width: 100%;
+    margin-top: 20px; }
 }
 
 /* Dekstop */
 @media (min-width: 992px) {
-  .hero .container {
-    gap: 17px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .hero .container .hero-text {
-    width: 890px; }
-  .hero .container img {
-    width: 437px; }
-
-  .hero .container img,
-  .kuliner .container .kuliner-title {
-    width: 437px; }
-
+  .hero .container,
+  .map .container,
   .pulau .container .card-area,
   .kuliner .container .card-area,
   .destinasi .container .card-area {
     gap: 16px;
     display: flex;
-    margin-top: 20px;
     align-items: center;
     justify-content: center; }
+
+  .map .container,
+  .pulau .container .card-area,
+  .kuliner .container .card-area,
+  .destinasi .container .card-area {
+    margin-top: 20px; }
+
+  .hero .container .hero-text {
+    width: 890px; }
+
+  .hero .container img,
+  .kuliner .container .kuliner-text {
+    width: 437px; }
+
+  .map .container img {
+    width: 551px; }
 
   .destinasi .container .card-area {
     flex-wrap: wrap;
     overflow: hidden; }
 
-  .destinasi .container .card-area .img-card {
-    width: 324px;
-    height: 400px;
-    object-fit: cover;
-    object-position: center;
-    transition: .3s ease-in-out;  }
-
-  .pulau .container .card-area .card:hover,
-  .pulau .container .card-area .card.active {
-    width: 324px; }
-
-  .pulau .container .card-area .card.active,
-  .budaya .container .budaya-title {
-    width: 324px; }
-
   
+
+  .map .container .map-text,
+  .pulau .container .card-area .card:hover,
+  .pulau .container .card-area .card.active,
+  .budaya .container .budaya-text  {
+    width: 324px; }
 
   .pulau .container .card-area .card .card-body {
     display: none; }
@@ -234,14 +206,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center; }
-  .budaya .container .budaya-title {
-    width: 324px; }
+
   .budaya .container .budaya-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
     justify-content: center; }
 
-  .kuliner .container .kuliner-title {
+  .kuliner .container .kuliner-text {
     width: 499px; }
 }
