@@ -17,34 +17,27 @@ p {
 .title {
   font-size: 36px;
   font-weight: 700;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .btn {
   padding: 8px 16px;
   border-radius: 10px;
-  background-color: #4876e8;
-}
+  background-color: #4876e8; }
 
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../img/bali.jpg");
-}
+  background-image: url("../img/bali.jpg"); }
 .hero .container {
-  padding: 107px 48px 48px 32px;
-}
+  padding: 107px 48px 48px 48px; }
 .hero .container h1 {
   font-size: 55px;
-  font-weight: 700;
-}
+  font-weight: 700; }
 .hero .container h2 {
-  font-size: 30px;
-}
+  font-size: 30px; }
 .hero .container p {
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 .hero::after {
   content: "";
@@ -114,6 +107,18 @@ section {
   width: 211px;
   transition: 0.5s;
   min-height: 300px; }
+
+.pulau .container .card-area .card .card-body {
+  bottom: 0;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #FFFFFF; }
+
+.pulau .container .card-area .card img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
 
 .kuliner .container .kuliner-title {
   gap: 32px;
@@ -189,13 +194,15 @@ section {
     justify-content: center; }
 
   .destinasi .container .card-area {
-  flex-wrap: wrap; }
+    flex-wrap: wrap;
+    overflow: hidden; }
 
   .destinasi .container .card-area .img-card {
     width: 324px;
     height: 400px;
     object-fit: cover;
-    object-position: center;  }
+    object-position: center;
+    transition: .3s ease-in-out;  }
 
   .pulau .container .card-area .card:hover,
   .pulau .container .card-area .card.active {
@@ -204,6 +211,15 @@ section {
   .pulau .container .card-area .card.active,
   .budaya .container .budaya-title {
     width: 324px; }
+
+  
+
+  .pulau .container .card-area .card .card-body {
+    display: none; }
+
+  .pulau .container .card-area .card:hover .card-body,
+  .pulau .container .card-area .card.active .card-body {
+    display: inline-block; }
 
   .budaya .container {
     gap: 128px;
