@@ -5,14 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"
-    defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"
-    defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
   <script src="assets/js/script.js" defer></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Document</title>
@@ -20,7 +17,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md fixed-top navbar-light navbar-dark" id="navbar">
+    <nav class="navbar navbar-expand-md fixed-top navbar-light" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="200px" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -66,9 +63,9 @@
         <div class="container">
           <div class="hero-text">
             <h1 id="welcome-text" class="text-white">Selamat Datang</h1>
-            <h2 class="text-white">Mari Cintai Indonesia</h2>
+            <h2 class="text-white">Mari Mengenal Indonesia</h2>
             <p class="text-white">
-              Mari mengenal Indonesia dengan berbagai keragaman, dari warisan budaya hingga destinasi kelas dunia yang
+              Indonesia memiliki berbagai keragaman, dari warisan budaya hingga destinasi kelas dunia yang
               menyenangkan.
             </p>
           </div>
@@ -76,49 +73,57 @@
         </div>
       </section>
 
-      <section class="pulau" id="pulau">
+      <section class="map">
+        <div class="container-fluid">
+          <div class="row gx-2 align-items-center">
+            <div class="col-8">
+              <img src="assets/img/Indonesiaa-01.png" class="img-fluid" alt="" srcset="">
+            </div>
+            <div class="col-4 justify-content-center">
+              <h1 class="text-header">Indonesia</h1>
+              <p class='text-body w-75 mt-3'>Indonesia merupakan negara terluas ke-14 sekaligus negara kepulauan
+                terbesar di dunia
+                dengan pulau
+                terbanyak ke-6 di
+                dunia, dengan jumlah 17.504 pulau.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="pulau" data-aos="zoom-in-up" id="pulau">
         <div class="container">
           <div class="header-card">
             <h1 class="text-center title">Tau Gak Sih?</h1>
           </div>
           <div class="card-area">
             <div class="card active border-0 position-relative">
-              <img src="assets/img/nature/natural-portraits-rice-fields-mountains-indonesian-rural-areas-with-sunrise-green-morning-dew-asia.jpg" alt="">
+              <img src="assets/img/facts/rafflesia-arnoldii-flowerrr-01.jpg" alt="">
               <div class="card-body position-absolute">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
+                <h5 class="card-title">Memiliki beragam flora dan fauna</h5>
               </div>
             </div>
 
             <div class="card border-0 position-relative">
-              <img src="assets/img/nature/natural-portraits-rice-fields-mountains-indonesian-rural-areas-with-sunrise-green-morning-dew-asia.jpg" alt="">
+              <img src="assets/img/facts/komodo-dragon-is-sitting-ground-against-backdrop-stunning-scenery-indonesia-komodo-national-park-01.jpg" alt="">
               <div class="card-body position-absolute">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
+                <h5 class="card-title">Satu-satunya tempat komodo</h5>
+                
               </div>
             </div>
 
             <div class="card border-0 position-relative">
-              <img src="assets/img/nature/natural-portraits-rice-fields-mountains-indonesian-rural-areas-with-sunrise-green-morning-dew-asia.jpg" alt="">
+              <img src="assets/img/facts/white-rhino-bush-kruger-game-reservesouth-africa-01.jpg" alt="">
               <div class="card-body position-absolute">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
+                <h5 class="card-title">Rumah bagi lebih dari 100 hewan yang terancam punah</h5>
               </div>
             </div>
 
             <div class="card border-0 position-relative">
-              <img src="assets/img/nature/natural-portraits-rice-fields-mountains-indonesian-rural-areas-with-sunrise-green-morning-dew-asia.jpg" alt="">
+              <img src="assets/img/facts/wooden-educational-cubes-with-letters-surface-laying-yellow-background-01.jpg" alt="">
               <div class="card-body position-absolute">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
+                <h5 class="card-title">Rumah bagi lebih dari 700 bahasa daerah</h5>
               </div>
             </div>
 
@@ -189,7 +194,7 @@
         <div class="container">
           <div class="destinasi-title text-center">
             <h1 class="title">Destinasi Wisata</h1>
-            <p>Berbagai Macam Destinasi Menarik yang Wajib Anda Kunjungi</p>
+            <p>Berbagai macam destinasi menarik yang wajib anda kunjungi</p>
           </div>
           <div class="card-area">
  
@@ -258,14 +263,7 @@
     </article>
   </main>
 
-  <footer>
-    <div class="container">
-      <div class="footer-left">
-        <img src="assets/img/logo-small.png" width="100px" alt="">
-  
-      </div>
-    </div>
-  </footer>
+
 
 </body>
 

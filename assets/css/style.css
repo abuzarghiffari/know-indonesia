@@ -114,11 +114,19 @@ section {
   border-radius: 20px;
   background-color: #FFFFFF; }
 
+.text-header {
+  font-size: 36px;
+}
+
+.text-body {
+  font-size: 16px;
+}
+
+
 .pulau .container .card-area .card img {
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-  }
+  height: 300px;
+  object-fit: cover;
+  object-position: center; }
 
 .kuliner .container .kuliner-title {
   gap: 32px;
