@@ -1,102 +1,134 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap");
 
 * {
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif; }
+
+p {
+  margin: 0; }
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  background-color: #4876E8; }
 
 .hero {
-  /* margin-top: 56px; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../img/bali.jpg");
-}
+  background-image: url("../img/bali.jpg") }
+.hero .container {
+  padding: 107px 48px 48px 32px; }
+.hero .container h1 {
+  font-size: 55px;
+  font-weight: 700; }
+.hero .container h2 {
+  font-size: 30px; }
+.hero .container p {
+  font-size: 20px; }
 
-.hero-content {
-  padding: 107px 48px 48px 32px;
-}
+.pulau,
+.kuliner {
+  margin: 95px 0; }
 
-.header-card {
-  font-size: 36px;
-}
-
-.pulau .container .card-area {
-  gap: 16px;
-}
+.card-title {
+  font-size: 18px;
+  font-weight: 700; }
 
 #welcome-text {
-  animation: move 4s infinite;
-  animation-delay: 3s;
   width: 100%;
   font-weight: bold;
-  /* height: 40px; */
-}
+  animation-delay: 3s;
+  animation: move 4s infinite; }
 
 @keyframes move {
   0% {
-    opacity: 100%;
-  }
+    opacity: 100%; }
   25% {
-    opacity: 0%;
-  }
+    opacity: 0%; }
   100% {
-    opacity: 100%;
-  }
-}
+    opacity: 100%; } }
 
 #navbar {
-  transition: 0.4s;
-}
+  transition: 0.4s; }
 
-.card {
+.pulau .container .card-area {
+  gap: 16px; }
+.pulau .container .card-area .card {
   width: 211px;
   transition: 0.5s;
-  min-height: 300px;
-}
+  min-height: 300px; }
+
+.kuliner .container .kuliner-title {
+  gap: 32px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center; }
+
+.budaya .container .budaya-title p {
+  margin: 16px 0 32px 0; }
+
 
 /* Mobile */
 @media (max-width: 992px) {
-  .hero-content .container {
-    text-align: center;
-  }
-  .hero-content .container img {
+  .hero .container {
+    text-align: center; }
+  .hero .container img {
     width: 100%;
-    margin-top: 20px;
-  }
-  .card {
+    margin-top: 20px; }
+  .hero .container h1 {
+    font-size: 35px; }
+  .pulau .container .card-area .card,
+  .kuliner .container .card-area .card {
     width: 100%;
-    margin-top: 20px;
-  }
+    margin-top: 20px; }
+  .budaya .container .budaya-img img {
+    width: 100%; 
+    margin-top: 20px ; } 
 }
 
 /* Dekstop */
 @media (min-width: 992px) {
-  .hero-content .container {
+  .hero .container {
     gap: 17px;
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
-  .hero-content .container .hero-text {
-    width: 890px;
-  }
-  .hero-content .container img {
-    width: 437px;
-  }
+    justify-content: center; }
+  .hero .container .hero-text {
+    width: 890px; }
+  .hero .container img {
+    width: 437px; }
 
-  .header-card {
-    margin-bottom: 20px;
-  }
-
-  .pulau .container .card-area {
+  .pulau .container .card-area,
+  .kuliner .container .card-area {
     gap: 16px;
     display: flex;
+    margin-top: 20px;
     align-items: center;
-    justify-content: center;
-  }
+    justify-content: center; }
+  .pulau .container .card-area .card:hover,
+  .pulau .container .card-area .card.active {
+    width: 324px; }
 
-  .card:hover,
-  .card.active {
-    width: 324px;
-  }
+  .budaya .container {
+    gap: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .budaya .container .budaya-title {
+    width: 324px; }
+  .budaya .container .budaya-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px; } 
+  
+  .kuliner .container .kuliner-title {
+    width: 499px; }
+
 }
