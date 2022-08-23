@@ -21,13 +21,21 @@ p {
   border-radius: 10px;
   background-color: #4876e8; }
 
+.navbar-dark .nav-link {
+  color: #FFFFFF !important; }
+.navbar-light {
+  background-color: #FFFFFF !important; }
+.navbar-light .nav-link {
+  color: #0A0A0A !important; }
+
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../img/bali.jpg"); }
+  background-image: url("../img/bali.jpg"); 
+  box-shadow: inset 0px 252px 82px 318px rgba(0, 0, 0, 0.4); }
 .hero .container {
-  padding: 107px 48px 48px 48px; }
+  padding: 107px 0 48px 0; }
 .hero .container h1 {
   font-size: 55px;
   font-weight: 700; }
@@ -35,55 +43,34 @@ p {
   font-size: 30px; }
 .hero .container p {
   font-size: 20px; }
-.hero::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(1, 0, 1, 0.616),
-    rgba(0, 0, 0, 0)
-  );
-  position: absolute;
-  bottom: 0; }
-.hero .container {
-  position: relative;
-  z-index: 1; }
-#navbar {
-  z-index: 2; }
 
+.map,
 .pulau,
 .kontak,
-.kuliner {
-  margin: 50px 0; }
+.footer,
+.budaya,
+.kuliner,
+.destinasi {
+  padding-top: 95px; }
 
 .card-title {
   font-size: 18px;
   font-weight: 700; }
 
-section {
-  padding-top: 80px;
-  margin-top: -60px; }
-
 #welcome-text {
-  width: 100%;
   font-weight: bold;
   animation: move 4s infinite;
   animation-delay: 3s; }
 
 @keyframes move {
   0% {
-    opacity: 100%;
-  }
+    opacity: 100%; }
   25% {
-    opacity: 0%;
-  }
+    opacity: 0%; }
   100% {
-    opacity: 100%;
-  } }
+    opacity: 100%; } }
 
-#navbar {
+.navbar {
   transition: 0.4s; }
 
 .pulau .container .card-area {
@@ -129,10 +116,6 @@ section {
   background-color: #FFFFFF; 
   border-start-end-radius: 20px; }
   
-.kuliner .container .card-area .card,
-.destinasi .container .card-area .img-card {
-  width: 324px; }
-
 /* Mobile */
 @media (max-width: 992px) {
   .hero .container {
@@ -156,7 +139,14 @@ section {
 
 /* Dekstop */
 @media (min-width: 992px) {
-  .hero .container,
+  .hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+  .hero .container .hero-text {
+    width: 600px; }
+
   .map .container,
   .pulau .container .card-area,
   .kuliner .container .card-area,
@@ -172,8 +162,9 @@ section {
   .destinasi .container .card-area {
     margin-top: 20px; }
 
-  .hero .container .hero-text {
-    width: 890px; }
+  .kuliner .container .card-area .card,
+  .destinasi .container .card-area .card {
+  width: 324px; }
 
   .hero .container img,
   .kuliner .container .kuliner-text {
@@ -181,13 +172,6 @@ section {
 
   .map .container img {
     width: 551px; }
-
-  .destinasi .container .card-area {
-    flex-wrap: wrap;
-    overflow: hidden; }
-
-  
-
   .map .container .map-text,
   .pulau .container .card-area .card:hover,
   .pulau .container .card-area .card.active,
@@ -196,7 +180,6 @@ section {
 
   .pulau .container .card-area .card .card-body {
     display: none; }
-
   .pulau .container .card-area .card:hover .card-body,
   .pulau .container .card-area .card.active .card-body {
     display: inline-block; }
@@ -206,12 +189,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: center; }
-
   .budaya .container .budaya-img {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
-    justify-content: center; }
+    grid-gap: 16px;
+    grid-template-columns: repeat(2, 1fr); }
 
   .kuliner .container .kuliner-text {
     width: 499px; }
